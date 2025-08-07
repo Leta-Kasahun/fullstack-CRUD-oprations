@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store - Add New Book</title>
+    <link rel="stylesheet" href="crud.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Book Store Manager</h1>
+            <p>Add new books to your collection</p>
+        </header>
+
+        <div class="controls">
+            <button id="createBtn" class="btn btn-primary active">Add New Book</button>
+            <button id="readBtn" class="btn btn-secondary">View All Books</button>
+            <button id="updateBtn" class="btn btn-warning">Update Book</button>
+            <button id="deleteBtn" class="btn btn-danger">Delete Book</button>
+        </div>
+
+        <form id="bookForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="publish_year">Publish Year:</label>
+                    <input type="date" id="publish_year" min="0">
+                </div>
+
+                <div class="form-group">
+                    <label for="price">Price (ETB):</label>
+                    <input type="number" id="price" min="0" step="0.01">
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Submit Details</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="crud.js"></script>
+</body>
+
+</html>
