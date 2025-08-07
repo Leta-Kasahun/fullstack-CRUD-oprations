@@ -10,7 +10,7 @@ This screenshot shows the form for adding a new book, which sends a `POST` reque
 ### 📖 View All Books
 This shows the list of all added books fetched from the backend using a `GET` request.
 
-![View Books](view.png)
+![View Books](veiw.png)
 
 ---
 
